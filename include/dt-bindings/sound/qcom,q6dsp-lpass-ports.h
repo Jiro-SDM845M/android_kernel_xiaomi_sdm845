@@ -208,6 +208,20 @@
 #define AIF_TDM_TX_11		202
 #define AIF_TDM_RX_12		203
 #define AIF_TDM_TX_12		204
+#define INT0_MI2S_RX		205
+#define INT0_MI2S_TX		206
+#define INT1_MI2S_RX		207
+#define INT1_MI2S_TX		208
+#define INT2_MI2S_RX		209
+#define INT2_MI2S_TX		210
+#define INT3_MI2S_RX		211
+#define INT3_MI2S_TX		212
+#define INT4_MI2S_RX		213
+#define INT4_MI2S_TX		214
+#define INT5_MI2S_RX		215
+#define INT5_MI2S_TX		216
+#define INT6_MI2S_RX		217
+#define INT6_MI2S_TX		218
 
 #define LPASS_CLK_ID_PRI_MI2S_IBIT	1
 #define LPASS_CLK_ID_PRI_MI2S_EBIT	2
