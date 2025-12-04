@@ -297,9 +297,7 @@ static int csiphy_stream_on_legacy(struct csiphy_device *csiphy)
 		wmb();
 	}
 
-	csiphy->res->hw_ops->lanes_enable(csiphy, cfg, link_freq, lane_mask);
-
-	return 0;
+	return csiphy->res->hw_ops->lanes_enable(csiphy, cfg, link_freq, lane_mask);
 }
 
 /*
