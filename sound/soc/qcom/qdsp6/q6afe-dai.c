@@ -1072,6 +1072,7 @@ static const struct snd_soc_dapm_widget q6afe_dai_widgets[] = {
 	SND_SOC_DAPM_AIF_IN("LPI_MI2S_RX_6", NULL,
 		0, SND_SOC_NOPM, 0, 0),
 	SND_SOC_DAPM_AIF_OUT("LPI_MI2S_TX_6", NULL,
+		0, SND_SOC_NOPM, 0, 0),
 	SND_SOC_DAPM_AIF_IN("INT0_MI2S_RX", "NULL",
 		0, SND_SOC_NOPM, 0, 0),
 	SND_SOC_DAPM_AIF_OUT("INT0_MI2S_TX", "NULL",
