@@ -331,12 +331,13 @@ static int csiphy_stream_on(struct csiphy_device *csiphy)
 	union phy_configure_opts dphy_opts = { 0 };
 	struct device *dev = csiphy->camss->dev;
 	u8 num_lanes = lncfg->num_data;
+	bool cphy = lncfg->phy_cfg == V4L2_MBUS_CSI2_CPHY;
 	s64 link_freq;
 	int ret;
 
 	dphy_cfg = &dphy_opts.mipi_dphy;
 
-	link_freq = camss_get_link_freq(&csiphy->subdev.entity, bpp, num_lanes);
+	link_freq = camss_get_link_freq(&csiphy->subdev.entity, bpp, num_lanes, cphy);
 
 	if (link_freq <= 0) {
 		dev_err(dev,

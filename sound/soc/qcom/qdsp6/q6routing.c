@@ -135,7 +135,7 @@
 	{ mix_name, "LPI_MI2S_TX_3", "LPI_MI2S_TX_3" },		\
 	{ mix_name, "LPI_MI2S_TX_4", "LPI_MI2S_TX_4" },		\
 	{ mix_name, "LPI_MI2S_TX_5", "LPI_MI2S_TX_5" },		\
-	{ mix_name, "LPI_MI2S_TX_6", "LPI_MI2S_TX_6" }
+	{ mix_name, "LPI_MI2S_TX_6", "LPI_MI2S_TX_6" },	\
 	{ mix_name, "INT0_MI2S_TX", "INT0_MI2S_TX" },		\
 	{ mix_name, "INT1_MI2S_TX", "INT1_MI2S_TX" },		\
 	{ mix_name, "INT2_MI2S_TX", "INT2_MI2S_TX" },		\
@@ -359,6 +359,8 @@
 		id, 1, 0, msm_routing_get_audio_mixer,			\
 		msm_routing_put_audio_mixer),				\
 	SOC_SINGLE_EXT("LPI_MI2S_TX_6", LPI_MI2S_TX_6,			\
+		id, 1, 0, msm_routing_get_audio_mixer,			\
+		msm_routing_put_audio_mixer),				\
 	SOC_SINGLE_EXT("INT0_MI2S_TX", INT0_MI2S_TX,			\
 		id, 1, 0, msm_routing_get_audio_mixer,			\
 		msm_routing_put_audio_mixer),				\
