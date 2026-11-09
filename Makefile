@@ -573,7 +573,7 @@ XZ		= xz
 ZSTD		= zstd
 # The kernel image is compressed with pigz, on the job slots make has free,
 # if it is installed. Everything else uses KGZIP.
-KPGZIP		:= $(if $(shell command -v pigz 2>/dev/null),$(PYTHON3) $(abs_srctree)/scripts/jobserver-exec pigz -p %PARALLELISM%,$(KGZIP))
+KPGZIP		?= $(KGZIP)
 TAR		= tar
 
 CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
